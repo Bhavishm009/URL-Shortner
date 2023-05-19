@@ -34,9 +34,9 @@ If you haven’t used tinyurl.com before, please try creating a new shortened UR
 
 ### Models
 - Url Model
-
+```javascript
 { urlCode: { mandatory, unique, lowercase, trim }, longUrl: {mandatory, valid url}, shortUrl: {mandatory, unique} }
-
+```
 
 ### POST /url/shorten
 - Create a short URL for an original url recieved in the request body.
@@ -66,24 +66,29 @@ If you haven’t used tinyurl.com before, please try creating a new shortened UR
 
 ### Successful Response structure
 yaml
+```javascript
 {
   status: true,
   data: {
 
   }
 }
+```
 
 ### Error Response structure
 yaml
+```javascript
 {
   status: false,
   message: ""
 }
+```
 
 ## Response samples
 
 ### Url shorten response
 yaml
+```javascript
 {
   "data": {
     "longUrl": "http://www.abc.com/oneofthelongesturlseverseenbyhumans.com",
@@ -91,4 +96,5 @@ yaml
     "urlCode": "ghfgfg"
   } 
 }
+```
 
