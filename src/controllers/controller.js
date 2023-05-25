@@ -9,12 +9,13 @@ const shortId = require("shortid");
 const redis = require('redis');
 
 const { promisify } = require('util');
+console.log(230*82);
 
 const redisClient = redis.createClient(
 
-    16948,
+    14293,//redis port
 
-    'redis-16948.c305.ap-south-1-1.ec2.cloud.redislabs.com',
+    'redis-14293.c305.ap-south-1-1.ec2.cloud.redislabs.com',// public end point redis
 
     { no_ready_check: true }
 
@@ -22,7 +23,7 @@ const redisClient = redis.createClient(
 
 redisClient.auth(
 
-    '6DLOlO0DrbeI2rubVd34Ipg74aQeXhdj',
+    '6Nm2ZIovmGI8seu98FhclDFQy8DbzNv8',//redis password
 
     function (err) {
 

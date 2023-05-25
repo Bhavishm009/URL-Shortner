@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://mcdn.wallpapersafari.com/medium/70/12/hZv27l.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 2vh auto;
+    width: 65vw;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  #head {
+    font-size: 4rem;
+    padding: 10px;
+    margin: 2vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  #about {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 5vh;
+    margin-top: 1vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  
+  .txt {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #59ce42;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3ea714;
+  }
+  
+  a:link,
+  a:visited {
+    color: #2784ee;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #3ea714;
+    text-decoration: underline;
+  }
+
+.footer{
+    margin-top: 7vh;
+    color: wheat;
+    margin-left: 5px;
+  }
+  

@@ -1,8 +1,11 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-mongoose.set("strictQuery",true)
-const route = require("./routes/route")
+mongoose.set("strictQuery",true);
+const route = require("./routes/route");
+const cors = require('cors');
+
+app.use(cors())
 
 app.use(express.json());
 
@@ -19,7 +22,7 @@ mongoose.connect("mongodb+srv://sandy_varanasi:sRzKkk5zN4u6uAZG@sandy-clusture.e
     useNewUrlParser : true
 })
 .then(()=> console.log("DB is connected"))
-.catch(err=> console.log(err.message))
+.catch(err=> console.log(err.response.data.message))
 
 app.use('/',route);
 
