@@ -5,7 +5,9 @@ mongoose.set("strictQuery",true);
 const route = require("./routes/route");
 const cors = require('cors');
 
-app.use(cors())
+require("dotenv").config();
+
+app.use(cors());
 
 app.use(express.json());
 
@@ -18,15 +20,14 @@ app.use((err, req, res, next) => {
     }
   });
 
-mongoose.connect("mongodb+srv://sandy_varanasi:sRzKkk5zN4u6uAZG@sandy-clusture.eimj9vg.mongodb.net/group12Database",{
+mongoose.connect(process.env.mongo_url,{
     useNewUrlParser : true
 })
 .then(()=> console.log("DB is connected"))
-.catch(err=> console.log(err.response.data.message))
+.catch(err=> console.log(err.response.data.message));
 
 app.use('/',route);
 
-app.listen(3000, function(){
-    console.log("Server online on port 3000")
-})
-
+app.listen(process.env.port||3000, function(){
+    console.log(`Server online on port ${process.env.port||3000}`)
+});
