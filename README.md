@@ -98,3 +98,16 @@ yaml
 }
 ```
 
+## Frontend
+Added Frontend part using React Js.
+The UI Contains one page only which has an input field that takes long URL and trims it and gives a Shortened URL.
+## To run React server 
+* Navigate to client folder
+```bash
+cd client
+```
+* Start server using 
+```bash
+npm run dev
+```
+* Navigate to browser and enjoy.
